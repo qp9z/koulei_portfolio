@@ -66,7 +66,7 @@
     margin-left:.06em;transform:translateY(.07em);animation:blink 1.05s step-end infinite}
   @keyframes blink{50%{opacity:0}}
   .lede{margin-top:28px;font-size:clamp(17px,2.4vw,21px);line-height:1.6;
-    color:#c4d2cb;max-width:600px}
+    color:#c2cce0;max-width:600px}
   .lede b{color:var(--ink);font-weight:600}
 
   /* ---- reveal animation ---- */
@@ -86,13 +86,13 @@
   .sec-h::before{content:"";width:18px;height:1px;background:var(--accent-dim)}
 
   /* ---- about ---- */
-  .about p{font-size:clamp(16px,2vw,18px);line-height:1.75;color:#c4d2cb;
+  .about p{font-size:clamp(16px,2vw,18px);line-height:1.75;color:#c2cce0;
     margin-bottom:18px;max-width:680px}
   .about p b{color:var(--ink);font-weight:600}
 
   /* ---- stack chips ---- */
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-  .chip{font-family:var(--mono);font-size:13px;color:#bcd0c5;
+  .chip{font-family:var(--mono);font-size:13px;color:#bcc6dc;
     border:1px solid var(--line);background:var(--panel);
     padding:9px 14px;border-radius:999px;transition:.25s}
   .chip:hover{border-color:var(--accent-dim);color:var(--accent);transform:translateY(-2px)}
@@ -109,9 +109,9 @@
     font-family:inherit;width:100%;text-align:left;
   }
   .card:hover{transform:translateY(-4px);border-color:var(--accent-dim);
-    background:#121b18}
+    background:#141b30}
   .card .ic{flex:0 0 42px;height:42px;border-radius:11px;
-    display:grid;place-items:center;background:#0c1311;border:1px solid var(--line)}
+    display:grid;place-items:center;background:#0b1020;border:1px solid var(--line)}
   .card .ic svg{width:22px;height:22px}
   .card .meta{display:flex;flex-direction:column;gap:3px;min-width:0}
   .card .label{font-family:var(--mono);font-size:12px;color:var(--muted);
@@ -270,6 +270,15 @@ function App(){
               <span className="meta">
                 <span className="label">GitHub</span>
                 <span className="val">qp9z</span>
+              </span>
+              <Arrow/>
+            </a>
+
+            <a className="card" href="mailto:contact@koulei.dev">
+              <span className="ic"><MailIcon/></span>
+              <span className="meta">
+                <span className="label">Email</span>
+                <span className="val">contact@koulei.dev</span>
               </span>
               <Arrow/>
             </a>
