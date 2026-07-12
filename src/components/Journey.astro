@@ -1,0 +1,74 @@
+---
+import { journey } from "../data/site";
+---
+<section id="journey" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The road so far</span>
+      <h2 class="section-title">My journey</h2>
+      <p class="section-sub">How I got here, and where I'm headed — a quick timeline of what I've done.</p>
+    </div>
+
+    <ol class="timeline">
+      {journey.map((j, i) => (
+        <li class="tl-item reveal" style={`--delay:${i * 90}ms`}>
+          <span class="tl-node"></span>
+          <div class="tl-card card">
+            <div class="tl-top">
+              <span class="tl-period">{j.period}</span>
+              <span class="chip">{j.tag}</span>
+            </div>
+            <h3 class="tl-title">{j.title}</h3>
+            <p class="tl-text">{j.text}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(var(--accent), var(--accent-2), transparent);
+  }
+  .tl-item {
+    position: relative;
+    padding-left: 40px;
+  }
+  .tl-item + .tl-item { margin-top: 18px; }
+  .tl-node {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+  .tl-card {
+    padding: 22px 24px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .tl-card:hover { transform: translateX(4px); border-color: var(--border-strong); }
+  .tl-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .tl-period { font-family: var(--mono); font-size: 0.82rem; font-weight: 600; color: var(--accent-2); }
+  .tl-title { font-size: 1.16rem; }
+  .tl-text { margin-top: 8px; color: var(--muted); font-size: 0.96rem; }
+
+  @media (max-width: 460px) {
+    .tl-top { flex-direction: column; align-items: flex-start; gap: 6px; }
+  }
+</style>

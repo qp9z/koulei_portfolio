@@ -1,0 +1,92 @@
+---
+import { about, services } from "../data/site";
+import Icon from "./Icon.astro";
+---
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-left reveal">
+      <span class="eyebrow">About me</span>
+      <h2 class="section-title">Turning ideas into<br /><span class="grad-text">apps people love.</span></h2>
+      <p class="section-sub">{about.intro}</p>
+      <p class="about-extra">{about.extra}</p>
+
+      <ul class="facts">
+        {about.facts.map((f) => (
+          <li>
+            <span class="fact-label">{f.label}</span>
+            <span class="fact-value">{f.value}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="about-right">
+      {services.map((s, i) => (
+        <article class="service card reveal" style={`--delay:${i * 90}ms`}>
+          <div class="service-icon"><Icon name={s.icon} size={22} /></div>
+          <h3>{s.title}</h3>
+          <p>{s.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .about-extra { margin-top: 18px; color: var(--muted); }
+
+  .facts {
+    list-style: none;
+    margin: 30px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .facts li {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+  }
+  .fact-label { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-2); font-weight: 600; }
+  .fact-value { color: var(--heading); font-weight: 500; }
+
+  .about-right { display: grid; gap: 16px; }
+  .service {
+    padding: 24px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease;
+  }
+  .service:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--glow);
+  }
+  .service-icon {
+    display: grid;
+    place-items: center;
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    color: var(--accent-2);
+    background: var(--accent-soft);
+    margin-bottom: 16px;
+  }
+  .service h3 { font-size: 1.12rem; margin-bottom: 8px; }
+  .service p { color: var(--muted); font-size: 0.96rem; }
+
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+  @media (max-width: 460px) {
+    .facts { grid-template-columns: 1fr; }
+  }
+</style>

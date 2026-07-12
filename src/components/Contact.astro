@@ -1,0 +1,68 @@
+---
+import { site, socials } from "../data/site";
+import Icon from "./Icon.astro";
+---
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact card reveal">
+      <div class="contact-glow"></div>
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="contact-title">Let's build something<br /><span class="grad-text">great together.</span></h2>
+      <p class="contact-sub">
+        Have a project, an idea, or just want to say hi? My inbox is always open —
+        I'll get back to you as soon as I can.
+      </p>
+
+      <div class="contact-cta">
+        <a href={`mailto:${site.email}`} class="btn btn-primary"><Icon name="mail" size={18} /> {site.email}</a>
+        <a href={site.resume} class="btn btn-ghost" target="_blank" rel="noopener">Download résumé <Icon name="arrow" size={18} /></a>
+      </div>
+
+      <div class="contact-social">
+        {socials.map((s) => (
+          <a href={s.url} class="soc" target={s.icon === "mail" ? undefined : "_blank"} rel="noopener">
+            <Icon name={s.icon} size={18} /> <span>{s.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact {
+    position: relative;
+    text-align: center;
+    padding: clamp(40px, 7vw, 72px) clamp(24px, 5vw, 60px);
+    overflow: hidden;
+  }
+  .contact-glow {
+    position: absolute;
+    inset: -40% 0 auto 0;
+    height: 320px;
+    background: radial-gradient(50% 100% at 50% 0%, var(--accent-soft), transparent 70%);
+    pointer-events: none;
+  }
+  .contact .eyebrow { justify-content: center; }
+  .contact .eyebrow::before { display: none; }
+  .contact-title { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900; }
+  .contact-sub { max-width: 52ch; margin: 18px auto 0; color: var(--muted); font-size: 1.08rem; }
+
+  .contact-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 34px; }
+
+  .contact-social { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 30px; }
+  .soc {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    color: var(--muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease, border-color 0.2s ease, transform 0.16s ease;
+  }
+  .soc:hover { color: var(--heading); border-color: var(--accent); transform: translateY(-2px); }
+</style>
