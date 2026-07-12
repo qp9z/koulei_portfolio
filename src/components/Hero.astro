@@ -137,7 +137,7 @@ const primaryStat = about.stats;
   .soc {
     display: grid;
     place-items: center;
-    width: 42px; height: 42px;
+    width: 44px; height: 44px;
     border-radius: 12px;
     color: var(--muted);
     background: var(--surface);
@@ -145,6 +145,7 @@ const primaryStat = about.stats;
     transition: color 0.2s ease, transform 0.18s ease, border-color 0.2s ease;
   }
   .soc:hover { color: var(--heading); transform: translateY(-3px); border-color: var(--accent); }
+  .soc:active { transform: scale(0.94); }
 
   /* visual */
   .hero-visual { position: relative; }
@@ -187,7 +188,7 @@ const primaryStat = about.stats;
     margin: 0;
     padding: 22px 22px 8px;
     font-family: var(--mono);
-    font-size: 0.9rem;
+    font-size: clamp(0.78rem, 3.2vw, 0.9rem);
     line-height: 1.7;
     color: var(--text);
     overflow-x: auto;
@@ -240,5 +241,10 @@ const primaryStat = about.stats;
     .hero-inner { grid-template-columns: 1fr; gap: 40px; }
     .hero-visual { order: -1; max-width: 460px; }
     .scroll-hint { display: none; }
+  }
+  @media (max-width: 480px) {
+    .hero-cta { flex-direction: column; align-items: stretch; }
+    .hero-cta .btn { justify-content: center; width: 100%; }
+    .orb { width: 220px; height: 220px; }
   }
 </style>

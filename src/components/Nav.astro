@@ -93,7 +93,7 @@ const links = [
   .icon-btn {
     display: grid;
     place-items: center;
-    width: 40px; height: 40px;
+    width: 44px; height: 44px;
     border-radius: 11px;
     color: var(--heading);
     background: var(--surface);
@@ -102,6 +102,7 @@ const links = [
     transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
   }
   .icon-btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .icon-btn:active { transform: scale(0.95); }
 
   #theme-toggle .moon { display: none; }
   :root[data-theme="light"] #theme-toggle .sun { display: none; }
@@ -110,14 +111,19 @@ const links = [
   .menu-btn { display: none; }
 
   .mobile-menu {
+    position: absolute;
+    top: var(--nav-h);
+    left: 0; right: 0;
     display: flex;
     flex-direction: column;
     gap: 6px;
     padding: 12px 24px 22px;
-    background: color-mix(in srgb, var(--bg) 92%, transparent);
-    backdrop-filter: blur(14px);
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    backdrop-filter: blur(14px) saturate(1.4);
     border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
   }
+  .mobile-menu[hidden] { display: none; }
   .mobile-link {
     padding: 12px 8px;
     color: var(--text);

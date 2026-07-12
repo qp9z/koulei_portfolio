@@ -94,13 +94,14 @@ const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featu
   .proj-links a {
     display: grid;
     place-items: center;
-    width: 36px; height: 36px;
+    width: 40px; height: 40px;
     border-radius: 10px;
     color: var(--muted);
     border: 1px solid var(--border);
     transition: color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
   }
   .proj-links a:hover { color: var(--heading); border-color: var(--accent); transform: translateY(-2px); }
+  .proj-links a:active { transform: scale(0.94); }
 
   .ribbon {
     position: absolute;
