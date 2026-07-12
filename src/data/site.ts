@@ -19,7 +19,7 @@ export const site = {
 
 // Set these to your real profiles (or leave a link out by deleting the line).
 export const socials = [
-  { name: "GitHub", icon: "github", url: "https://github.com/koulei" },
+  { name: "GitHub", icon: "github", url: "https://github.com/qp9z" },
   { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/koulei" },
   { name: "X", icon: "x", url: "https://x.com/koulei" },
   { name: "Email", icon: "mail", url: "mailto:abdulrhmansmadi@gmail.com" },
@@ -37,9 +37,9 @@ export const about = {
     { label: "Currently", value: "Learning, building & shipping" },
   ],
   stats: [
-    { value: "3+", label: "Years coding" },
-    { value: "6+", label: "Projects built" },
-    { value: "12+", label: "Technologies" },
+    { value: "1+", label: "Years coding" },
+    { value: "2+", label: "Projects built" },
+    { value: "3+", label: "Technologies" },
   ],
 };
 
@@ -78,7 +78,7 @@ export const projects = [
       "A to-do & habit tracker built with Flutter and Firebase — offline sync, smart reminders, and a clean Material 3 interface.",
     tags: ["Flutter", "Firebase", "Riverpod"],
     featured: true,
-    links: { code: "https://github.com/koulei", demo: "" },
+    links: { code: "https://github.com/qp9z", demo: "" },
   },
   {
     name: "WeatherNow",
@@ -87,7 +87,7 @@ export const projects = [
       "Location search, hourly & 7-day forecasts, and animated conditions, powered by the OpenWeather API and a tidy Dart architecture.",
     tags: ["Flutter", "REST API", "Dart"],
     featured: true,
-    links: { code: "https://github.com/koulei", demo: "" },
+    links: { code: "https://github.com/qp9z", demo: "" },
   },
   {
     name: "koulei.dev",
@@ -96,7 +96,7 @@ export const projects = [
       "Designed and built from scratch with Astro for a fast, static, fully accessible experience — dark mode, motion, and zero bloat.",
     tags: ["Astro", "TypeScript", "CSS"],
     featured: false,
-    links: { code: "https://github.com/koulei", demo: "https://koulei.dev" },
+    links: { code: "https://github.com/qp9z/koulei_portfolio", demo: "https://koulei.dev" },
   },
   {
     name: "ShopEase",
@@ -105,7 +105,7 @@ export const projects = [
       "A product catalog, cart, and checkout flow built to practice clean architecture and predictable state management with Bloc.",
     tags: ["Flutter", "Bloc"],
     featured: false,
-    links: { code: "https://github.com/koulei", demo: "" },
+    links: { code: "https://github.com/qp9z", demo: "" },
   },
   {
     name: "DevNotes",
@@ -114,7 +114,7 @@ export const projects = [
       "A markdown notes app with syntax highlighting and tag-based organization, backed by a local SQLite store.",
     tags: ["Flutter", "SQLite"],
     featured: false,
-    links: { code: "https://github.com/koulei", demo: "" },
+    links: { code: "https://github.com/qp9z", demo: "" },
   },
   {
     name: "Quizzly",
@@ -123,7 +123,7 @@ export const projects = [
       "Category-based quizzes with timers and score tracking, consuming a public trivia API with graceful loading and error states.",
     tags: ["Flutter", "REST API"],
     featured: false,
-    links: { code: "https://github.com/koulei", demo: "" },
+    links: { code: "https://github.com/qp9z", demo: "" },
   },
 ];
 
