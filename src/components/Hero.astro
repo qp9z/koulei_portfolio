@@ -31,7 +31,7 @@ const primaryStat = about.stats;
 
       <div class="hero-social">
         {socials.map((s) => (
-          <a href={s.url} class="soc" target={s.icon === "mail" ? undefined : "_blank"} rel="noopener" aria-label={s.name}>
+          <a href={s.url} class="soc" target={s.url.startsWith("http") ? "_blank" : undefined} rel="noopener" aria-label={s.name}>
             <Icon name={s.icon} size={19} />
           </a>
         ))}

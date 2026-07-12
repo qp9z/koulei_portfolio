@@ -14,7 +14,7 @@ const year = new Date().getFullYear();
 
     <div class="footer-social">
       {socials.map((s) => (
-        <a href={s.url} target={s.icon === "mail" ? undefined : "_blank"} rel="noopener" aria-label={s.name}>
+        <a href={s.url} target={s.url.startsWith("http") ? "_blank" : undefined} rel="noopener" aria-label={s.name}>
           <Icon name={s.icon} size={18} />
         </a>
       ))}

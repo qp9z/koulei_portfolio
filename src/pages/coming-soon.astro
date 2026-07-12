@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import { site } from "../data/site";
+---
+<Layout title={`Coming soon — ${site.brand}`} description="This page is still in the works.">
+  <main class="soon">
+    <div class="glow"></div>
+    <div class="card">
+      <a href="/" class="brand" aria-label={`${site.brand} — home`}>
+        <span class="brand-mark">{site.brand.charAt(0)}</span>
+        <span class="brand-name">{site.brand}<span class="brand-dot">.dev</span></span>
+      </a>
+
+      <span class="badge"><span class="dot"></span> In progress</span>
+
+      <h1 class="title grad-text">Coming soon</h1>
+      <p class="sub">
+        This page isn't ready just yet — I'm still putting it together.
+        Check back soon, or head back and explore the rest.
+      </p>
+
+      <div class="cta">
+        <a href="/" class="btn btn-primary"><Icon name="arrow" size={18} class="flip" /> Back home</a>
+        <a href={`mailto:${site.email}`} class="btn btn-ghost"><Icon name="mail" size={18} /> {site.email}</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .soon {
+    position: relative;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    overflow: hidden;
+  }
+  .glow {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(760px, 120vw);
+    height: 520px;
+    background: radial-gradient(50% 60% at 50% 0%, rgba(255, 255, 255, 0.08), transparent 70%);
+    pointer-events: none;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+    padding: clamp(32px, 6vw, 56px);
+    background: color-mix(in srgb, var(--surface) 82%, transparent);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glow);
+  }
+
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; margin-bottom: 26px; }
+  .brand-mark {
+    display: grid; place-items: center;
+    width: 34px; height: 34px;
+    border-radius: 10px;
+    color: var(--on-accent);
+    background: var(--grad);
+    text-transform: uppercase;
+    box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.6);
+  }
+  .brand-name { color: var(--heading); font-size: 1.1rem; letter-spacing: -0.02em; }
+  .brand-dot { color: var(--muted); font-weight: 600; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+  }
+  .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #eaeaec;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.45);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.45); }
+    70% { box-shadow: 0 0 0 7px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+  }
+
+  .title {
+    margin-top: 18px;
+    font-size: clamp(2.4rem, 9vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+  .sub {
+    margin: 16px auto 0;
+    max-width: 42ch;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+  .cta .btn { max-width: 100%; white-space: normal; word-break: break-word; }
+  .flip { transform: rotate(180deg); }
+
+  @media (max-width: 480px) {
+    .cta { flex-direction: column; align-items: stretch; }
+    .cta .btn { width: 100%; justify-content: center; }
+  }
+</style>

@@ -8,11 +8,11 @@ export const site = {
   name: "Abdulrhman Al-Smadi",
   role: "Software Engineer · Flutter Developer",
   location: "Amman, Jordan",
-  email: "abdulrhmansmadi@gmail.com",
+  email: "contact@koulei.dev",
   url: "https://koulei.dev",
   available: true,
   availabilityText: "Open to freelance work & collaborations",
-  resume: "/resume.pdf", // drop a resume.pdf into /public to enable
+  resume: "/coming-soon", // TODO: point to /resume.pdf once the CV is ready
   tagline:
     "I build fast, beautiful cross-platform apps with Flutter — turning ideas into polished products that feel great to use.",
 };
@@ -20,26 +20,26 @@ export const site = {
 // Set these to your real profiles (or leave a link out by deleting the line).
 export const socials = [
   { name: "GitHub", icon: "github", url: "https://github.com/qp9z" },
-  { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/koulei" },
-  { name: "X", icon: "x", url: "https://x.com/koulei" },
-  { name: "Email", icon: "mail", url: "mailto:abdulrhmansmadi@gmail.com" },
+  { name: "LinkedIn", icon: "linkedin", url: "/coming-soon" },
+  { name: "X", icon: "x", url: "/coming-soon" },
+  { name: "Email", icon: "mail", url: "mailto:contact@koulei.dev" },
 ];
 
 export const about = {
   intro:
-    "I'm a first-year Software Engineering student at Wise University in Jordan, and a self-driven mobile developer. I specialize in building cross-platform apps with Flutter — obsessing over clean architecture, delightful UI, and shipping things that actually work.",
+    "I'm a first-year Software Engineering student at WISE University in Jordan, and a self-driven mobile developer. I specialize in building cross-platform apps with Flutter — obsessing over clean architecture, delightful UI, and shipping things that actually work.",
   extra:
     "Whether it's a mobile app, a web experience, or a weekend experiment, I care about the details: smooth interactions, sensible code, and interfaces people enjoy using.",
   facts: [
     { label: "Focus", value: "Flutter & Mobile" },
-    { label: "Education", value: "B.Sc. Software Engineering — Wise University" },
+    { label: "Education", value: "B.Sc. Software Engineering — WISE University" },
     { label: "Based in", value: "Amman, Jordan" },
     { label: "Currently", value: "Learning, building & shipping" },
   ],
   stats: [
-    { value: "1+", label: "Years coding" },
+    { value: "3+", label: "Years coding" },
     { value: "2+", label: "Projects built" },
-    { value: "3+", label: "Technologies" },
+    { value: "5+", label: "Technologies" },
   ],
 };
 
@@ -131,7 +131,7 @@ export const projects = [
 export const journey = [
   {
     period: "2025 — Present",
-    title: "B.Sc. Software Engineering — Wise University",
+    title: "B.Sc. Software Engineering — WISE University",
     text: "Started my Software Engineering degree in Jordan, deepening the fundamentals: data structures, algorithms, and software design.",
     tag: "Education",
   },
