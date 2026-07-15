@@ -72,58 +72,25 @@ export const skills = [
 // featured: true → shows a highlight ring + appears first.
 export const projects = [
   {
-    name: "TaskFlow",
-    tagline: "Cross-platform productivity app",
+    name: "CAS",
+    tagline: "Premium streaming app for Android",
     description:
-      "A to-do & habit tracker built with Flutter and Firebase — offline sync, smart reminders, and a clean Material 3 interface.",
-    tags: ["Flutter", "Firebase", "Riverpod"],
+      "A full-featured streaming app for Live TV & movies, built for speed and buttery playback. Instant startup with cached catalogs, an advanced video player (10-second skip, multiple screen-fit modes, subtitles), an animated 'Deep Space' UI, and secure family profiles with separate watch histories. Shipped v1.0.0.",
+    tags: ["Flutter", "Dart", "Streaming", "Video Player"],
     featured: true,
-    links: { code: "https://github.com/qp9z", demo: "" },
-  },
-  {
-    name: "WeatherNow",
-    tagline: "Sleek weather forecasts",
-    description:
-      "Location search, hourly & 7-day forecasts, and animated conditions, powered by the OpenWeather API and a tidy Dart architecture.",
-    tags: ["Flutter", "REST API", "Dart"],
-    featured: true,
-    links: { code: "https://github.com/qp9z", demo: "" },
+    links: {
+      code: "https://github.com/qp9z/CAS_mobile-release",
+      demo: "https://github.com/qp9z/CAS_mobile-release/releases",
+    },
   },
   {
     name: "koulei.dev",
     tagline: "This portfolio",
     description:
-      "Designed and built from scratch with Astro for a fast, static, fully accessible experience — dark mode, motion, and zero bloat.",
+      "Designed and built from scratch with Astro for a fast, static, fully accessible experience — monochrome theme with a light/dark toggle, tasteful motion, and zero bloat.",
     tags: ["Astro", "TypeScript", "CSS"],
     featured: false,
     links: { code: "https://github.com/qp9z/koulei_portfolio", demo: "https://koulei.dev" },
-  },
-  {
-    name: "ShopEase",
-    tagline: "Mini e-commerce app",
-    description:
-      "A product catalog, cart, and checkout flow built to practice clean architecture and predictable state management with Bloc.",
-    tags: ["Flutter", "Bloc"],
-    featured: false,
-    links: { code: "https://github.com/qp9z", demo: "" },
-  },
-  {
-    name: "DevNotes",
-    tagline: "Notes for developers",
-    description:
-      "A markdown notes app with syntax highlighting and tag-based organization, backed by a local SQLite store.",
-    tags: ["Flutter", "SQLite"],
-    featured: false,
-    links: { code: "https://github.com/qp9z", demo: "" },
-  },
-  {
-    name: "Quizzly",
-    tagline: "Trivia quiz game",
-    description:
-      "Category-based quizzes with timers and score tracking, consuming a public trivia API with graceful loading and error states.",
-    tags: ["Flutter", "REST API"],
-    featured: false,
-    links: { code: "https://github.com/qp9z", demo: "" },
   },
 ];
 
@@ -138,7 +105,7 @@ export const journey = [
   {
     period: "2024",
     title: "Went all-in on Flutter",
-    text: "Focused on mobile development, shipping several cross-platform apps and getting comfortable with Firebase, state management, and clean architecture.",
+    text: "Focused on mobile development — building and shipping cross-platform apps, and getting comfortable with state management, clean architecture, and reliable media playback.",
     tag: "Mobile",
   },
   {

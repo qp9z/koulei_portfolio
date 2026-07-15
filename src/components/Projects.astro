@@ -10,7 +10,7 @@ const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featu
     <div class="section-head reveal">
       <span class="eyebrow">Selected work</span>
       <h2 class="section-title">Projects I've built</h2>
-      <p class="section-sub">A mix of shipped apps and experiments. Each one taught me something worth keeping.</p>
+      <p class="section-sub">Real things I've designed and built end to end — from a full streaming app to this very site.</p>
     </div>
 
     <div class="proj-grid">
@@ -50,7 +50,7 @@ const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featu
 <style>
   .proj-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 20px;
   }
   .proj {
@@ -120,6 +120,5 @@ const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featu
   .proj-desc { margin-top: 12px; color: var(--muted); font-size: 0.95rem; flex: 1; }
   .proj-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 
-  @media (max-width: 900px) { .proj-grid { grid-template-columns: repeat(2, 1fr); } .ribbon { right: 80px; } }
-  @media (max-width: 620px) { .proj-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .ribbon { right: 80px; } }
 </style>
