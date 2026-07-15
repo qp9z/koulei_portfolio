@@ -27,7 +27,7 @@ export const socials = [
 
 export const about = {
   intro:
-    "I'm a first-year Software Engineering student at WISE University in Jordan, and a self-driven mobile developer. I specialize in building cross-platform apps with Flutter — obsessing over clean architecture, delightful UI, and shipping things that actually work.",
+    "I'm a Freshman Software Engineering student at WISE University in Jordan, and a self-driven mobile developer. I specialize in building cross-platform apps with Flutter — obsessing over clean architecture, delightful UI, and shipping things that actually work.",
   extra:
     "Whether it's a mobile app, a web experience, or a weekend experiment, I care about the details: smooth interactions, sensible code, and interfaces people enjoy using.",
   facts: [
