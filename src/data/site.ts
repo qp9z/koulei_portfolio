@@ -5,7 +5,7 @@
 
 export const site = {
   brand: "koulei",
-  name: "Abdulrhman Al-Smadi",
+  name: "Abdulrhman Al-Smadi ",
   role: "Software Engineer · Flutter Developer",
   location: "Amman, Jordan",
   email: "contact@koulei.dev",
