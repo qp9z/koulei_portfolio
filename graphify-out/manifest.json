@@ -1,0 +1,127 @@
+{
+  ".vscode/extensions.json": {
+    "mtime": 1783526477.0,
+    "ast_hash": "3adedb22d082dbd1ebb00b75d21403aa",
+    "semantic_hash": "3adedb22d082dbd1ebb00b75d21403aa"
+  },
+  ".vscode/launch.json": {
+    "mtime": 1783526477.0,
+    "ast_hash": "60493763dcbc2d109e57da86d997602a",
+    "semantic_hash": "60493763dcbc2d109e57da86d997602a"
+  },
+  "astro.config.mjs": {
+    "mtime": 1783526477.0,
+    "ast_hash": "7fce1873757c6836fb4b7880f219b5ca",
+    "semantic_hash": "7fce1873757c6836fb4b7880f219b5ca"
+  },
+  "package.json": {
+    "mtime": 1784301161.4771824,
+    "ast_hash": "9e9e0e4d73dcf7c725fd37f23e946319",
+    "semantic_hash": "9e9e0e4d73dcf7c725fd37f23e946319"
+  },
+  "src/components/About.astro": {
+    "mtime": 1783847088.0466657,
+    "ast_hash": "c9b0e56fbbbb7a99b6f30e0a2a1cbc85",
+    "semantic_hash": "c9b0e56fbbbb7a99b6f30e0a2a1cbc85"
+  },
+  "src/components/Contact.astro": {
+    "mtime": 1783850308.3134189,
+    "ast_hash": "fc538c90ae404573e391bd246ce677f2",
+    "semantic_hash": "fc538c90ae404573e391bd246ce677f2"
+  },
+  "src/components/Footer.astro": {
+    "mtime": 1783850306.6149917,
+    "ast_hash": "f6308684ff16f7ab32ae453ca32b971a",
+    "semantic_hash": "f6308684ff16f7ab32ae453ca32b971a"
+  },
+  "src/components/Hero.astro": {
+    "mtime": 1783850302.7972093,
+    "ast_hash": "0f7ab688f5c576f628b84070b79150fe",
+    "semantic_hash": "0f7ab688f5c576f628b84070b79150fe"
+  },
+  "src/components/Icon.astro": {
+    "mtime": 1783846970.698347,
+    "ast_hash": "b1106923d8ae49ebad9910f40dffeb6c",
+    "semantic_hash": "b1106923d8ae49ebad9910f40dffeb6c"
+  },
+  "src/components/Journey.astro": {
+    "mtime": 1783847137.4913328,
+    "ast_hash": "fae96aa865d940c947bb965455400e45",
+    "semantic_hash": "fae96aa865d940c947bb965455400e45"
+  },
+  "src/components/Nav.astro": {
+    "mtime": 1783849733.5965204,
+    "ast_hash": "5c7b4e36093d82e2ffb0b488cbbe84e5",
+    "semantic_hash": "5c7b4e36093d82e2ffb0b488cbbe84e5"
+  },
+  "src/components/Projects.astro": {
+    "mtime": 1784074672.8722377,
+    "ast_hash": "417111d6b4f289ba0b38bc80c7757e28",
+    "semantic_hash": "417111d6b4f289ba0b38bc80c7757e28"
+  },
+  "src/components/Skills.astro": {
+    "mtime": 1783847102.1163564,
+    "ast_hash": "a63065bb83f2914eed903cc218427bae",
+    "semantic_hash": "a63065bb83f2914eed903cc218427bae"
+  },
+  "src/data/site.ts": {
+    "mtime": 1784083848.8104858,
+    "ast_hash": "4a8e35dfedd83001414b87580645b226",
+    "semantic_hash": "4a8e35dfedd83001414b87580645b226"
+  },
+  "src/layouts/Layout.astro": {
+    "mtime": 1784075533.4368162,
+    "ast_hash": "277a770b1e3fc60b4e702d9281ff923a",
+    "semantic_hash": "277a770b1e3fc60b4e702d9281ff923a"
+  },
+  "src/pages/coming-soon.astro": {
+    "mtime": 1783850329.569943,
+    "ast_hash": "925f15447e93662bd9999f182b33fdf6",
+    "semantic_hash": "925f15447e93662bd9999f182b33fdf6"
+  },
+  "src/pages/index.astro": {
+    "mtime": 1783847174.116991,
+    "ast_hash": "b04c9e9ae74a4ec0c7f7c8a0dc186f7c",
+    "semantic_hash": "b04c9e9ae74a4ec0c7f7c8a0dc186f7c"
+  },
+  "tsconfig.json": {
+    "mtime": 1783526477.0,
+    "ast_hash": "1d3613ac08bdda17e2b82251613dbc21",
+    "semantic_hash": "1d3613ac08bdda17e2b82251613dbc21"
+  },
+  "AGENTS.md": {
+    "mtime": 1783695544.5343711,
+    "ast_hash": "4d944a80d98bf8891d5b10081a86d3e1",
+    "semantic_hash": "4d944a80d98bf8891d5b10081a86d3e1"
+  },
+  "CLAUDE.md": {
+    "mtime": 1783695544.5343711,
+    "ast_hash": "4d944a80d98bf8891d5b10081a86d3e1",
+    "semantic_hash": "4d944a80d98bf8891d5b10081a86d3e1"
+  },
+  "README.md": {
+    "mtime": 1784299691.7853758,
+    "ast_hash": "29585efd03b219c387239d972fd7bbfa",
+    "semantic_hash": "29585efd03b219c387239d972fd7bbfa"
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1784077396.387,
+    "ast_hash": "d0526dde902b6130c3435262d0553c75",
+    "semantic_hash": "d0526dde902b6130c3435262d0553c75"
+  },
+  "public/favicon-96.png": {
+    "mtime": 1784077396.387,
+    "ast_hash": "f7beaae8e51e16283c27d30393967d45",
+    "semantic_hash": "f7beaae8e51e16283c27d30393967d45"
+  },
+  "public/favicon.svg": {
+    "mtime": 1784077386.631276,
+    "ast_hash": "c3e1a59640bb6497cfc828074560751a",
+    "semantic_hash": "c3e1a59640bb6497cfc828074560751a"
+  },
+  "public/og.png": {
+    "mtime": 1784075513.977,
+    "ast_hash": "185f44ec2dddf3e0762aea7899cd01ca",
+    "semantic_hash": "185f44ec2dddf3e0762aea7899cd01ca"
+  }
+}
