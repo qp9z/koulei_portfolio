@@ -20,7 +20,7 @@ export const site = {
 // Set these to your real profiles (or leave a link out by deleting the line).
 export const socials = [
   { name: "GitHub", icon: "github", url: "https://github.com/qp9z" },
-  { name: "LinkedIn", icon: "linkedin", url: "/coming-soon" },
+  { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/koulei/" },
   { name: "X", icon: "x", url: "/coming-soon" },
   { name: "Email", icon: "mail", url: "mailto:contact@koulei.dev" },
 ];
